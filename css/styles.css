@@ -8,17 +8,37 @@
   --footer-logo-color: #f4f4fd;
   --typical-lh: 1.5;
 }
-
+* {
+  box-sizing: border-box;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+ul {
+  margin: 0;
+  padding-left: 0;
+}
 body {
   font-family: 'Roboto', sans-serif;
   background-color: var(--main-backgraund-color);
   color: #2e2f42;
 }
-
+.container {
+  width: 1158px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+  outline: 2px solid red;
+}
 .link {
   text-decoration: none;
 }
-
 .list {
   list-style: none;
 }
@@ -27,10 +47,16 @@ body {
   line-height: var(--typical-lh);
   letter-spacing: 0.02em;
 }
-
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
 /*----------------------------Header----------------------------*/
 .header {
   background-color: var(--main-backgraund-color);
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 .header_navigation {
 }
@@ -83,12 +109,19 @@ body {
 /*----------------------------Hero----------------------------*/
 .hero {
   background-color: var(--main-text-color);
+  padding-top: 188px;
+  padding-bottom: 188px;
 }
 .hero-title {
   font-size: 56px;
+  text-align: center;
   line-height: 1.07;
   letter-spacing: 0.02em;
   color: var(--main-backgraund-color);
+  max-width: 496px;
+  margin-bottom: 48px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .hero-button {
   font-family: inherit;
@@ -106,6 +139,8 @@ body {
 }
 /*----------------------------Features----------------------------*/
 .features {
+  padding-bottom: 120px;
+  padding-top: 120px;
 }
 .visually-hidden {
   position: absolute;
@@ -141,6 +176,9 @@ body {
   line-height: 1.11;
   letter-spacing: 0.02em;
   color: var(--main-text-color);
+  text-align: center;
+  text-transform: capitalize;
+  margin-bottom: 72px;
 }
 .doing-list {
 }
@@ -149,6 +187,8 @@ body {
 /*----------------------------Team----------------------------*/
 .team {
   background-color: var(--footer-logo-color);
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 .team-title {
   font-size: 36px;
@@ -156,6 +196,7 @@ body {
   letter-spacing: 0.02em;
   text-transform: capitalize;
   color: var(--main-text-color);
+  margin-bottom: 72px;
 }
 .team-list {
 }
