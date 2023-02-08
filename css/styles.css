@@ -321,7 +321,7 @@ img {
 }
 .offers-link:hover,
 .offers-link:focus {
-  color: var(--accent-passive-color);
+  background-color: var(--accent-passive-color);
 }
 .offers-choice {
   padding-top: 32px;
