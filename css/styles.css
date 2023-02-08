@@ -27,7 +27,7 @@ ul {
 body {
   font-family: 'Roboto', sans-serif;
   background-color: var(--main-backgraund-color);
-  color: #2e2f42;
+  color: var(--main-text-color);
 }
 .container {
   width: 1158px;
@@ -53,7 +53,7 @@ img {
 /*----------------------------Header----------------------------*/
 .header {
   background-color: var(--main-backgraund-color);
-  border-bottom: 1px solid #e7e9fc;
+  border-bottom: 1px solid var(--footer-text-color);
 }
 .header-container {
   display: flex;
@@ -147,6 +147,7 @@ img {
   cursor: pointer;
   width: 169px;
   height: 56px;
+  border: none;
   border-radius: 4px;
 }
 .hero-button:hover,
@@ -172,12 +173,10 @@ img {
 }
 .features-list {
   display: flex;
-  margin-left: -24px;
+  gap: 24px;
 }
 .features-item {
-  width: 264px;
-  flex-basis: calc(100% / 4 - 24px);
-  margin-left: 24px;
+  flex-basis: calc((100% - 72px) / 4);
 }
 .features-subtitle {
   font-weight: 500;
@@ -230,7 +229,11 @@ img {
   gap: 24px;
 }
 .team-item {
+  background-color: var(--main-backgraund-color);
   width: calc((100% -72px) / 4);
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  border-radius: 0px 0px 4px 4px;
 }
 .team-cont {
   padding-top: 32px;
@@ -298,12 +301,13 @@ img {
   cursor: pointer;
   padding: 12px 24px;
   border-radius: 4px;
-  border: 1px solid #e7e9fc;
+  border: 1px solid var(--footer-text-color);
   background-color: var(--footer-logo-color);
 }
 .works-button:hover,
 .works-button:focus {
   background-color: var(--accent-active-color);
+  color: var(--main-backgraund-color);
 }
 .offers-list {
   display: flex;
@@ -312,13 +316,20 @@ img {
   row-gap: 48px;
 }
 .offers-item {
+  background-color: var(--main-backgraund-color);
   width: calc((100% - 48px) / 3);
-  border: 1px solid #e7e9fc;
+}
+.offers-link:hover,
+.offers-link:focus {
+  color: var(--accent-passive-color);
 }
 .offers-choice {
   padding-top: 32px;
   padding-bottom: 32px;
   padding-left: 16px;
+  border-left: 1px solid var(--footer-text-color);
+  border-right: 1px solid var(--footer-text-color);
+  border-bottom: 1px solid var(--footer-text-color);
 }
 .offers-title {
   font-weight: 500;
@@ -329,5 +340,8 @@ img {
 }
 .offers-text {
   margin-top: 8px;
-  color: var(--main-text-color);
+  color: var(--second-text-color);
+  font-size: 16px;
+  line-height: var(--typical-lh);
+  letter-spacing: 0.02em;
 }
